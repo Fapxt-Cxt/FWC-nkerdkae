@@ -16,13 +16,12 @@ balloon.addEventListener('click', () => {
 });
 
 balloon.addEventListener('mouseleave', () => {
-    if (size > 2000) {
+    if (size > 200) {
         size -= 5;
-        colorIn = 0;
         if (size < 200) {
             size = 200;
         }
-        colorIn = (colorIn - 1 + colors.length) % colorIn.length;
+        colorIn = (colorIn - 1 + colors.length) % colors.length;
     }
 
     updateBalloon();
