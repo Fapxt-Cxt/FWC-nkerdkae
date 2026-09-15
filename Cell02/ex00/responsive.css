@@ -7,3 +7,16 @@ body {
     margin: 0;
     padding: 0;
 }
+
+td {
+    height: 100vh;
+    width: 50%;
+}
+
+.cell1 {
+    background-color: powderblue;
+}
+
+.cell2 {
+    background-color: lightpink;
+}
