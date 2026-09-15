@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    margin: 0;
+}
+#balloon {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    cursor: pinter;
+    user-select: none;
+}
