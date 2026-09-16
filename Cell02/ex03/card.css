@@ -1,5 +1,64 @@
 body {
-    width: 50vw;
-    align-items: center;
-    background-color: powderblue;
+    text-align: center;
+    background-color: rgb(213, 249, 254);
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.profile-table td {
+    padding: 8px 16px;
+    border: none;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.username {
+    font-weight: bold;
+    color: black;
+}
+
+.description {
+    color: #444;
+}
+
+.socials img {
+    width: 18px;
+    height: 18px;
+    margin: 0 4px
+}
+
+.contact-btn-cell {
+    padding: 0;
+}
+
+.contact-btn {
+    width: 100%;
+    background-color: rgb(51, 114, 122);
+    color: black;
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.contact-btn:hover {
+  background-color: #333333;
 }
