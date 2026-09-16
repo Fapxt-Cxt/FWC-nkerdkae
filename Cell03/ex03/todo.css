@@ -1,0 +1,34 @@
+body {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arail, sans-serif;
+}
+
+#new-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#ft_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px
+}
+
+#ft_list div {
+    padding: 20px;
+    margin-bottom: 5px;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#ft_list div:hover {
+    background-color: #ffcfcf;
+    border-color: #ff4d4d;
+}

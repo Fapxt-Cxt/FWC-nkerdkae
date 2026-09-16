@@ -17,7 +17,7 @@ document.getElementById('calc-form').addEventListener('submit', function(event) 
 
     const leftNum = parseInt(leftStr, 10);
     const rightNum = parseInt(rightStr, 10);
-
+                            
     if ((operator === '/' || operator === '%') && rightNum === 0) {
         alert("It's over 9000!");
         console.log("It's over 9000!");
