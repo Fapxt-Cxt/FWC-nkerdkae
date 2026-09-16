@@ -1,0 +1,60 @@
+body {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #fdf6f6;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-container {
+    background-color: #fff0f0;
+    border: 2px solid #f8b4b4;
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 24px rgba(229, 115, 115, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#new_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #e57373;
+}
+
+#new_btn:hover {
+    background-color: #ef5350;
+}
+
+#ft_list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 400px;
+    text-align: center;
+}
+
+#ft_list div {
+    padding: 20px;
+    margin-bottom: 5px;
+    align-items: center;
+    background-color: rgb(255, 204, 204);
+    border: 1px solid #a56868;
+    cursor: pointer;
+    word-break: break-all;
+}
+
+#ft_list div:hover {
+    background-color: #ffebee;
+    border-color: #ef9a9a;
+    color: #c62828;
+}
