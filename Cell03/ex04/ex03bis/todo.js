@@ -1,10 +1,10 @@
-window.onload = function () {
-    const ftList = document.getElementById('ft_list');
-    const newBtn = document.getElementById('new_btn');
+$(document).ready(function() {
+    const $ftList = $('#ft_list');
+    const $newBtn = $('#new_btn');
 
     loadTodos();
 
-    newBtn.addEventListener('click', function () {
+    $newBtn.click(function() {
         const todoText = prompt('Enter a new TO DO:');
 
         if (todoText && todoText.trim() !== '') {
@@ -14,26 +14,23 @@ window.onload = function () {
     });
 
     function addTodo(text) {
-        const todoDiv = document.createElement('div');
-        todoDiv.textContent = text;
+        const $todoDiv = $('<div></div>').text(text);
 
-        todoDiv.addEventListener('click', function () {
+        $todoDiv.click(function() {
             if (confirm('Do you want to remove this to-do item?')) {
-                todoDiv.remove();
+                $(this).remove();
                 saveTodos();
             }
         });
 
-        ftList.insertBefore(todoDiv, ftList.firstChild);
+        $ftList.prepend($todoDiv);
     }
 
     function saveTodos() {
         const todos = [];
-        const items = ftList.children;
-        
-        for (let i = 0; i < items.length; i++) {
-            todos.push(items[i].textContent);
-        }
+        $ftList.children().each(function() {
+            todos.push($(this).text());
+        });
  
         const encodedData = encodeURIComponent(JSON.stringify(todos));
         document.cookie = "ft_todo=" + encodedData + "; path=/; max-age=" + (7 * 24 * 60 * 60);
@@ -56,12 +53,12 @@ window.onload = function () {
                 const todos = JSON.parse(decodeURIComponent(todoCookie));
                 if (Array.isArray(todos)) {
                     for (let i=todos.length - 1; i>=0; i--) {
-                        addTodo(text);
-                    };
+                        addTodo(todos[i]);
+                    }
                 }
             } catch (e) {
                 console.error("Error parsing todo cookie:", e);
             }
         }
     }
-};
+});
