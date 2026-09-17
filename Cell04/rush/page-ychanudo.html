@@ -1,11 +1,95 @@
-<!DOCTYPE html>
-<html>
-    <head lang="en">
 
-        <link rel="stylesheet" href="page.css">
-    </head>
-    <body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <script src="rush.js"></script>
-    </body>
-</html>
+/*Navigation Bar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.mid_nav {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 5px 5px;
+}
+
+.Portfolio_text {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav_text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+/* eff Hover */
+.nav_text:hover {
+    color: #b3c274;
+}
+
+/*About Me*/
+.mid_display {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 10px 30px;
+}
+.grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.f{
+    flex: 1;
+}
+.bg_big {
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 1500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgba(247, 211, 215, 0.5);
+}
+.bg_small {
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgba(168, 43, 57, 0.5);
+}
+
+.profile_img {
+    max-width: auto;
+    height: 350px;
+}
+.line_display{
+    display: grid;
+    justify-items: start; /* ดันวัตถุทุกชิ้นใน Grid (รวมถึงกล่องย่อย) ให้ชิดซ้าย */
+    text-align: left;     /* จัดข้อความตัวอักษรให้ชิดซ้าย */
+    align-items: center;
+    padding: 10px;
+    width: 100%;          /* ขยายกล่องให้เต็มพื้นที่เพื่อดันไปชิดซ้ายสุดได้ */
+}
+.text {
+    color: #000000;
+    text-decoration: none;
+    font-size: var(--fs, 20px);
+    transition: color 0.3s;
+}
