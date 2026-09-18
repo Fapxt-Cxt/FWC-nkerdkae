@@ -40,14 +40,14 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f2f6f9;
-  --surface-color: #ffffff;
+  --background-color: #e7f5ff;
+  --surface-color: #dcf9f6;
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #02272d;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #63e9e3;
   --surface-color: #252525;
   --contrast-color: #ffffff;
 }
